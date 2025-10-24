@@ -15,7 +15,7 @@
         android:layout_height="220dp"
         android:layout_gravity="center"
         android:scaleType="centerCrop"
-        tools:src="@drawable/ic_pemain" />
+        tools:src="@drawable/ic_pemainn" />
 
     <!-- Nama Pemain -->
     <TextView
