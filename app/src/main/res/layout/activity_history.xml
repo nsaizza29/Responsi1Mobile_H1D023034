@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Gambar klub -->
+        <ImageView
+            android:id="@+id/img_history"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_history"
+            android:contentDescription="@string/club_history" />
+
+        <!-- Judul -->
+        <TextView
+            android:id="@+id/tv_title_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/club_history2"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/header_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Deskripsi sejarah klub -->
+            <TextView
+                android:id="@+id/tv_description_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                android:lineSpacingExtra="6dp"
+                android:justificationMode="inter_word"
+                android:text="Klub ini didirikan pada tahun 1975 oleh sekelompok pecinta sepak bola lokal yang ingin menciptakan wadah bagi talenta muda. Sejak awal, visi klub adalah menggabungkan pendidikan karakter dengan kemampuan sepak bola, sehingga para pemain tidak hanya terampil di lapangan tetapi juga memiliki disiplin dan rasa tanggung jawab tinggi.\n\nSeiring waktu, klub mulai mengikuti berbagai turnamen regional dan nasional, yang semakin menguatkan reputasi mereka. Pelatih-pelatih profesional mulai direkrut untuk memastikan setiap pemain mendapatkan bimbingan terbaik, dan sistem pelatihan terus diperbarui agar sesuai dengan standar modern.\n\nPada era 1990-an, klub membuka akademi muda untuk anak-anak dan remaja. Akademi ini menjadi tempat lahirnya banyak pemain berbakat yang kelak berkarier di liga-liga profesional di dalam maupun luar negeri. Selain teknik bermain, akademi juga menekankan pendidikan formal dan keterampilan sosial.\n\nAwal tahun 2000-an, klub mulai meraih prestasi signifikan, termasuk memenangkan beberapa turnamen tingkat provinsi dan nasional. Hal ini memicu peningkatan jumlah penggemar dan sponsor, yang kemudian mendukung pembangunan fasilitas latihan yang lebih modern dan stadion yang lebih representatif.\n\nHingga kini, klub tetap menjadi simbol kebanggaan masyarakat lokal. Sejarah panjangnya mencerminkan dedikasi, kerja keras, dan semangat komunitas yang solid. Klub terus berupaya mengembangkan pemain muda, memperkuat tim utama, dan menjaga tradisi sambil menghadapi tantangan sepak bola modern secara profesional." />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
