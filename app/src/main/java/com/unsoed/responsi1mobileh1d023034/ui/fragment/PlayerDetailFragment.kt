@@ -52,7 +52,7 @@ class PlayerDetailFragment : BottomSheetDialogFragment() {
         binding.tvPlayerBirth.text = birth ?: "-"
 
         Glide.with(this)
-            .load(R.drawable.ic_team)
+            .load(R.drawable.ic_pemain)
             .into(binding.imgPlayer)
     }
 
