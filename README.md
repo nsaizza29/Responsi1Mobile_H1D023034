@@ -1,9 +1,13 @@
 # Responsi 1 Pemograman Mobile
 
 ## Identitas
-- Nama  : Nisa Izzatul Ummah
-- NIM   : H1D023034
-- Shift : D
+- Nama        : Nisa Izzatul Ummah
+- NIM         : H1D023034
+- Shift Baru  : D
+- Shift Lama  : C
+
+## Demo Aplikasi
+https://github.com/user-attachments/assets/394e2bbe-82b3-42bc-a052-fc9abc447bad
 
 ## Alur Aplikasi
 ###  Aktivitas Utama (MainActivity)
